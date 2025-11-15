@@ -1,0 +1,118 @@
+1 What are React components? Explain functional vs class components.
+=>
+In this React Components, it is used in the webPage of the browser. React is used in reuseable components.
+React is an library of JavaScript and used in user Interface (UI) can make. React is create the User Interface data on the browser.
+Functional Components => Functional Component is an normal functions normally can return in functional component.
+Class Components => Like as ES6 based-class
+Ex ->
+class Teacher {
+    constructor(name, subject) {
+        this.name = "name";
+        this.subject = "subject";
+    }
+    sayHello() {
+        console.log(`Hello ${this.name} teaches ${this.subject}`);
+    }
+}
+const result = new Teacher("Rahul", "HTML);
+console.log(result);
+
+
+2. What is the difference between state and props?
+=>
+Props => Props (short for Properties) are used in data pass from parent component to child component. with the help ofProps can update the state then after component is render.
+State => State in the react component are used in useState hook managing the state in with the help of hook useState.
+
+
+3 Explain the concept of Virtual DOM and how React uses it.
+=>
+Virtual DOM = Virtual DOM are used in virtual representating on browser.
+    It is an DOM Manipulation is very easy. It is an updates is fast and it can't be updates in directly HTML. Virtual DOM is an no westage of memory.
+
+
+4 What are React Hooks? Name a few commonly used ones and their use cases.
+=>
+Basically react hooks are many types in react library. Such as -> 
+= useState -> useState using the state is update and managed.
+= useEffect -> useEffect are used in api calls, DOM Manipulation, etc. there are 4 dependencies in useEffect hook.
+1. No Dependencies => It will execute in every Render method.
+    Syntax ->
+        {() => {
+            console.log("Class");
+        } };
+2. Empty Dependencies => It will execute in only First render method.
+    Syntax -> 
+        {() => {
+            console.log("called");
+        }, []};
+3. Single Dependencies => It will execute in update the counter and then after first render method.
+    Syntax ->
+        {() => {
+            console.log("called");
+        }, [counter1]};
+4. Multiple Dependencies => It will execute in update the multiple counter and then after first render method.
+    Syntax -> 
+        {() => {
+            console.log("called");
+        }, [counter1][counter2]};
+
+
+5 What is the difference between useEffect and useLayoutEffect?
+=>
+useEffect Hook => useEffect hook are the types of hooks in react library. It is used in api calls, DOM manipulate, etc. There are many types of dependencies in useEffect hook such as ->
+1. No Dependencies => It will execute in every Render method.
+    Syntax ->
+        {() => {
+            console.log("Class");
+        } };
+2. Empty Dependencies => It will execute in only First render method.
+    Syntax -> 
+        {() => {
+            console.log("called");
+        }, []};
+3. Single Dependencies => It will execute in update the counter and then after first render method.
+    Syntax ->
+        {() => {
+            console.log("called");
+        }, [counter1]};
+4. Multiple Dependencies => It will execute in update the multiple counter and then after first render method.
+    Syntax -> 
+        {() => {
+            console.log("called");
+        }, [counter1][counter2]};
+useLayoutEffect =>  
+
+
+6 What is the purpose of useMemo and useCallback hooks?
+=>
+useMemo hook => useMemo hook are the type od react hooks. It is used in memoize the functions and catch the calculation in useMemo hook.
+useCallback hook => useCallback hook are the type of hooks. It is an catch the function definition of the block in useCallback hook.
+
+
+7. How does React handle reconciliation and diffing?
+=>
+React handle reconciliation and diffing it is an reconciliation process. React is managed the state in using useState hook. 
+It is used can user Interface(UI) on the browser.
+  
+8 What are controlled vs uncontrolled components in React?
+=>
+Controlled Components => Controlled Components are manage the react state, it"s used in only react-state. It is an Complex Forms.
+Uncontrolled Components => Uncontrolled Components are managing by Dom. It's used in DOM Ref. It is an Simpler Form.
+
+
+9 How do you implement routing in a React application?
+=>
+Routing in react application is an routing is very important part in react-router dom. It will work in react application.
+Routing is an work in path and element statement. React-Router-dom is basically under in a routing set as path and element.
+React-Router-dom basic syntax such as:-
+<Routes>
+    <Route path="./" element = {<Home />}/>
+</Routes>
+
+
+10. What are React’s best practices for performance optimization?
+=>
+React's best Practices for performance optimization is an best practice used useContext and useReducer hook practices. 
+useContext is an component states are managed. 
+useReducer are basically divided into 2 sub-parts:- actions, dispatch.
+One of the most topic in only Redux. Redux is an used in global state are managed.
